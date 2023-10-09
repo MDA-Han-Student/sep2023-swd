@@ -29,7 +29,7 @@ async function main($log) {
 //
 async function seed() {
   await seedLocation();
-  await seedPlayer();
+  // await seedPlayer();
 }
 
 async function seedLocation() {
@@ -60,6 +60,8 @@ async function seedPlayer() {
   await Player.insertMany([
     {
       _id: "han",
+      name: "han",
+      items: [],
       currentLocation: "forest",
       map: [
         {
@@ -76,6 +78,8 @@ async function seedPlayer() {
     },
     {
       _id: "femke",
+      name: "femke",
+      items: [],
       currentLocation: "town",
       map: [
         {

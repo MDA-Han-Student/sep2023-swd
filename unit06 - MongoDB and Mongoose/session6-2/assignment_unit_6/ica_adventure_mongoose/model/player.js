@@ -2,7 +2,7 @@
 
 const mongoose = require("mongoose");
 
-const Location = require("./location");
+const Location = require("./location").schema;
 
 const name = "Player";
 const schema = new mongoose.Schema(
